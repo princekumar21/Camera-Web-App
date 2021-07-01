@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        flex-grow: 3;
+        background-color: white;
+      }
+      #camera-open {
+        position: absolute;
+
+        height: 5rem;
+        width: 5rem;
+        margin-right: 60rem;
+        background-image: url(camera.png);
+        background-size: cover;
+        cursor: pointer;
+      }
+      .camera {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 5rem;
+        background-color: lightblue;
+      }
+
+      .media-container {
+        height: 250px;
+        width: 250px;
+        margin: 1rem;
+        border: px solid black;
+        box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+          0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+          0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+          0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+      }
+
+      .media {
+        height: 90%;
+        width: 100%;
+        cursor: pointer;
+      }
+      .action {
+        display: flex;
+        height: 10%;
+        width: 100%;
+        cursor: pointer;
+      }
+
+      video {
+        width: 100%;
+        height: 100%;
+      }
+      img {
+        height: 100%;
+        width: 100%;
+        border-top: 1px solid black;
+        border-left: 1px solid black;
+        border-right: 1px  solid black;
+      }
+
+      .download {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        height: 100%;
+        border: 1px solid black;
+        background-color: #8080804f;
+      }
+
+      .delete {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        height: 100%;
+        border: 1px solid black;
+        background-color: #8080804f;
+      }
+      h1 {
+        display: flex;
+
+        color: initial;
+        font-family: cursive;
+        z-index: 4;
+      }
+
+      .gallery {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80%;
+        width: 20%;
+        border: 2px solid red;
+        border-style: solid;
+        border-color: #287ec7;
+        background-color: lightcyan;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        box-shadow: 6px 3px 11px 2px lightseagreen;
+        /* margin-left : 18rem; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="camera">
+      <div id="camera-open"></div>
+      <div class="gallery">
+        <h1>Gallery</h1>
+      </div>
+    </div>
+    <!-- <div class="media-container">
+      <div class="media">
+        <img>
+      </div>
+      
+        <div class="action">
+        <div  class="material-icons download">download</div>
+        <div class="material-icons delete" >delete</div>
+        </div>
+      </div>
+    </div> -->
+    <script src="dbScript.js"></script>
+    <script>
+      setTimeout(function () {
+        viewMedia();
+      }, 100);
+
+      let camera = document.querySelector("#camera-open");
+      camera.addEventListener("click", function () {
+        location.assign("index.html");
+      });
+    </script>
+  </body>
+</html>

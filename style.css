@@ -24,7 +24,7 @@ body {
   /* width: 3.5rem; */
   position: fixed;
   z-index: 2;
-  bottom: 14rem;
+  bottom: 10rem;
   right: 1.8rem;
   background-color: black;
   cursor: pointer;
@@ -37,12 +37,12 @@ body {
 
 #record {
   right: 3vh;
-  top: 42vh;
+  top: 49vh;
 }
 
 #capture {
   right: 3vh;
-  top: 31vh;
+  top: 38vh;
 }
 .video-container {
   height: 100vh;
@@ -141,10 +141,11 @@ video {
   align-items: center;
   color: white;
   font-size: 43px;
-  border-radius: 13px;
+  border-radius: 25px;
   border: 3px solid white;
   background-color: #57606f;
   cursor: pointer;
+  margin-top : 37px
 }
 
 .zoom-out {
@@ -158,8 +159,9 @@ video {
   justify-content: center;
   align-items: center;
   color: white;
-  border-radius: 13px;
+  border-radius: 25px;
   border: 3px solid white;
   background-color: #57606f;
   cursor: pointer;
+  margin-top : 3px;
 }

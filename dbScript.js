@@ -92,13 +92,7 @@ function viewMedia() {
         a.remove();
       });
 
-      let deleteBttn = div.querySelector(".delete");
-      deleteBttn.addEventListener("click", function (event) {
-        let id = event.currentTarget.getAttribute("data-id");
-        deleteMedia(id);
-
-        event.currentTarget.parentElement.parentElement.remove();
-      });
+      
       body.append(div);
       cursor.continue();
     }

@@ -64,13 +64,7 @@ video {
   border-radius: 50%;
 }
 
-#capture div {
-  height: 60%;
-  width: 68%;
-  margin: auto;
-  background: white;
-  border-radius: 50%;
-}
+
 .filter-container {
   height: 60vh;
   width: 15vh;

@@ -152,7 +152,10 @@
         viewMedia();
       }, 100);
 
-      
+      let camera = document.querySelector("#camera-open");
+      camera.addEventListener("click", function () {
+        location.assign("index.html");
+      });
     </script>
   </body>
 </html>
